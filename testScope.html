@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //hoisting =>access variable or function before declaration
+        // {
+        //     console.log(x);
+        //     console.log(y);
+        //     console.log(z);
+        // }
+        function checkError(n)
+        {
+            
+            let x=n;
+            while(true)
+            {
+               
+                if(x<=12)
+                {
+                    
+                    document.write(x+"<br>");
+                    x--;
+                    if(x==0)
+                    {
+                       
+                        break;
+                        
+                    }
+                    
+                }
+                else{
+                   document.write("X is Greater than 12 <br>");
+                   break;
+                }
+            }
+        }
+       checkError(12); 
+
+    </script>
+</body>
+</html>
